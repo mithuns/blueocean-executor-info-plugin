@@ -1,0 +1,7 @@
+# Extensions in this plugin
+extensions:
+  - component: Routes
+    extensionPoint: jenkins.main.routes
+
+  - component: TopLink
+    extensionPoint: jenkins.blueocean.top.links
