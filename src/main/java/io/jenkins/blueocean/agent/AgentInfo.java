@@ -1,4 +1,4 @@
-package com.mycompany.sample.plugin;
+package io.jenkins.blueocean.agent;
 
 import hudson.Extension;
 import hudson.model.Computer;
@@ -61,9 +61,6 @@ public class AgentInfo extends Resource implements OrganizationRoute {
                             Run r = task.runForDisplay();
                             info.add(new ComputerInfo(getLink(), r, e.getDisplayName()));
                             continue EXECUTORS;
-                        }
-                        if (executing instanceof org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution.PlaceholderTask) {
-                            
                         }
                         if (executing instanceof Job<?, ?>) {
                             Job<?, ?> task = (Job<?, ?>)executing;

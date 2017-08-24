@@ -1,7 +1,7 @@
 {
   "name": "blueocean-pipeline-agent-info",
-  "version": "0.0.1",
-  "description": "Awesome Plugin",
+  "version": "0.0.0",
+  "description": "Blue Ocean Agent Info Plugin",
   "scripts": {
     "bundle:watch": "jjsbuilder --tasks bundle:watch",
     "mvnbuild": "jjsbuilder --tasks bundle",

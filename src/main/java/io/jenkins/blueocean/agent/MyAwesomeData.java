@@ -1,4 +1,4 @@
-package com.mycompany.sample.plugin;
+package io.jenkins.blueocean.agent;
 
 import hudson.Extension;
 import io.jenkins.blueocean.rest.OrganizationRoute;

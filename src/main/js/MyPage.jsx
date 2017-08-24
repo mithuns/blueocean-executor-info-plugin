@@ -1,12 +1,13 @@
 import React from 'react';
 import { Fetch, UrlConfig, AppConfig } from '@jenkins-cd/blueocean-core-js';
+import { blueocean } from '@jenkins-cd/blueocean-core-js/dist/js/scopes';
 import { Dialog } from '@jenkins-cd/design-language';
 
 export class MyPage extends React.Component {
     componentWillMount() {
         Fetch.fetchJSON(`${UrlConfig.getRestBaseURL()}/organizations/${AppConfig.getOrganizationName()}/awesome/`)
         .then(response => {
-            this.setState({message: response.message});
+            this.setState({ message: response.message, agents: blueocean.agent });
         });
     }
     render() {
