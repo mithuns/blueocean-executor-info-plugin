@@ -4,10 +4,10 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>2.17</version>
+        <version>2.30</version>
     </parent>
-    <name>Amazing Plugin</name>
-    <artifactId>amazing-plugin</artifactId>
+    <name>Blue Ocean Agent Info</name>
+    <artifactId>blueocean-agent-info-plugin</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazing+Plugin</url>
@@ -16,7 +16,7 @@
         <jenkins.version>2.7.4</jenkins.version>
         <node.version>6.2.1</node.version>
         <npm.version>3.10.10</npm.version>
-        <blueocean.version>1.1.7</blueocean.version>
+        <blueocean.version>1.2.0</blueocean.version>
     </properties>
     <dependencies>
         <dependency>
