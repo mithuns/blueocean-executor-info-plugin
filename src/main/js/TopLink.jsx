@@ -3,7 +3,9 @@ import { Link } from 'react-router';
 import { AppConfig } from '@jenkins-cd/blueocean-core-js';
 
 export default () =>
-    <Link className="" to={`/organizations/${AppConfig.getOrganizationName()}/awesome`} title="Awesome">
-        Awesome
+    <Link className=""
+            to={`/organizations/${AppConfig.getOrganizationName()}/executor-info`}
+            title="Executor Information">
+        Executors
     </Link>
 ;

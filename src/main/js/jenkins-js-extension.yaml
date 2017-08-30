@@ -1,7 +1,13 @@
 # Extensions in this plugin
 extensions:
-  - component: Routes
-    extensionPoint: jenkins.main.routes
+  - extensionPoint: jenkins.main.routes
+    component: Routes
 
-  - component: TopLink
-    extensionPoint: jenkins.blueocean.top.links
+  - extensionPoint: jenkins.blueocean.top.links
+    component: TopLink
+    
+  - extensionPoint: jenkins.pipeline.branches.list.action
+    component: ItemExecutorInfo
+
+  - extensionPoint: jenkins.pipeline.activity.list.action
+    component: ItemExecutorInfo

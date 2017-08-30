@@ -1,5 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router';
-import { MyPage } from './MyPage';
+import { ExecutorInfoPage } from './ExecutorInfoPage';
 
-export default <Route path="/organizations/:organization/awesome" component={MyPage} />;
+export default (
+    <Route path="/organizations/:organization/executor-info"
+           component={ExecutorInfoPage} />
+);

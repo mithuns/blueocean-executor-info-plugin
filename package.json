@@ -1,7 +1,7 @@
 {
-  "name": "blueocean-pipeline-agent-info",
+  "name": "blueocean-pipeline-executor-info",
   "version": "0.0.0",
-  "description": "Blue Ocean Agent Info Plugin",
+  "description": "Blue Ocean Executor Info Plugin",
   "scripts": {
     "bundle:watch": "jjsbuilder --tasks bundle:watch",
     "mvnbuild": "jjsbuilder --tasks bundle",
@@ -24,6 +24,8 @@
     "react-router": "2.3.0"
   },
   "dependencies": {
-    "@jenkins-cd/js-modules": "0.0.8"
+    "@jenkins-cd/js-modules": "0.0.8",
+    "mobx": "2.6.0",
+    "mobx-react": "3.5.7"
   }
 }

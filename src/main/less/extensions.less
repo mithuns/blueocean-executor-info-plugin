@@ -1,7 +1,34 @@
-.awesome-page {
+.executor-info-table {
     min-width: 20em;
-    padding: 1em 4em;
-    border-radius: .3em;
-    background: #949393;
-    color: #d54c53;
+    margin: 10em;
+    
+    .executor-info-executor {
+        padding-left: 1em;
+    }
+}
+
+.executor-activity-icon {
+    position: relative;
+
+    .executor-activity-list {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        min-width: 20em;
+        max-width: 30em;
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+    }
+    
+    &:hover {
+        .executor-activity-list {
+            display: block;
+        }
+    }
+}
+
+.JTable-cell-contents.JTable-cell-contents {
+    overflow: visible;
 }
