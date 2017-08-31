@@ -9,3 +9,17 @@ to your own plugin. There are some
 ```
 mvn install
 ```
+
+# Running
+
+This requires 2 terminals/etc.. To run the plugin:
+
+```
+mvn hpi:run
+```
+
+.. and to recompile the javascript as you update it:
+
+```
+node/npm run bundle:watch
+```
