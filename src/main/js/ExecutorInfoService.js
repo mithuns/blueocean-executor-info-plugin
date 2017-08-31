@@ -30,4 +30,6 @@ export class ExecutorInfoService {
     }
 }
 
+// Export an instance to be shared so sseConnection.subscribe
+// not called multiple times
 export default new ExecutorInfoService();
