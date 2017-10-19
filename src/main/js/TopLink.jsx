@@ -4,7 +4,7 @@ import { AppConfig } from '@jenkins-cd/blueocean-core-js';
 
 export default () =>
     <Link className=""
-            to={`/organizations/${AppConfig.getOrganizationName()}/executor-info`}
+            to={`/executor-info`}
             title="Executor Information">
         Executors
     </Link>
