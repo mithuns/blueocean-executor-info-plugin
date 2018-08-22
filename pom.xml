@@ -4,20 +4,20 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>2.30</version>
+        <version>3.19</version>
     </parent>
     <name>Blue Ocean Executor Info</name>
     <artifactId>blueocean-executor-info</artifactId>
-    <version>0.1-beta-3-SNAPSHOT</version>
+    <version>0.2-beta-1-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <description>Show what executors are doing what.</description>
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazing+Plugin</url>
     <properties>
-        <java.level>7</java.level>
-        <jenkins.version>2.7.4</jenkins.version>
+        <java.level>8</java.level>
+        <jenkins.version>2.121.1</jenkins.version>
         <node.version>6.2.1</node.version>
         <npm.version>3.10.10</npm.version>
-        <blueocean.version>1.2.0</blueocean.version>
+        <blueocean.version>1.8.2</blueocean.version>
     </properties>
     
     <licenses>
@@ -26,7 +26,7 @@
         <url>http://opensource.org/licenses/MIT</url>
       </license>
     </licenses>
-        
+
     <developers>
       <developer>
         <id>kzantow</id>
@@ -43,11 +43,46 @@
     </scm>
     
     <dependencies>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>script-security</artifactId>
+            <version>1.44</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-step-api</artifactId>
+            <version>2.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-scm-step</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jenkins.blueocean</groupId>
+            <artifactId>blueocean-pipeline-api-impl</artifactId>
+            <version>${blueocean.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>io.jenkins.blueocean</groupId>
             <artifactId>blueocean</artifactId>
             <version>${blueocean.version}</version>
+            <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.jenkins.blueocean</groupId>
             <artifactId>blueocean-rest</artifactId>
@@ -61,7 +96,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>structs</artifactId>
-            <version>1.10</version>
+            <version>1.14</version>
         </dependency>
     </dependencies>
 
