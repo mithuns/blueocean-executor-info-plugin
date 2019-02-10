@@ -5,35 +5,44 @@ import { JTable, TableHeaderRow, TableRow, TableCell, StatusIndicator, Icon } fr
 
 const columns = [
     JTable.column(10, '', false),
-    JTable.column(60, 'Computers', true),
+    JTable.column(60, 'Computers', true)
 ];
 
 @observer
 export class ExecutorInfoPage extends React.Component {
     render() {
         return (
-            <JTable columns={columns} className="executor-info-table">
-                <TableHeaderRow />
-                {executorInfoService.computers && executorInfoService.computers.map(computer => [
-                    <TableRow>
-                        <TableCell>
-                            <Icon size={24} icon="HardwareComputer" color="rgba(53, 64, 82, 0.5)" />
-                        </TableCell>
-                        <TableCell>
-                            {computer.displayName}
-                        </TableCell>
-                    </TableRow>].concat(computer.executors.map(executor =>
-                    <TableRow>
-                        <TableCell>
-                        {!executor.idle && <StatusIndicator result="running" percentage={1000} />}
-                        </TableCell>
-                        <TableCell className="executor-info-cell">
-                            <Icon size={18} icon="NavigationSubdirectoryArrowRight" color="rgba(53, 64, 82, 0.5)" />
-                            {executor.displayName}
-                        </TableCell>
-                    </TableRow>))
-                )}
-            </JTable>
+            <div>
+                <div className="BasicHeader BasicHeader--default ContentPageHeader">
+                    <div className="Header-details">
+                        <div className="ContentPageHeader-main u-flex-grow">
+                                <h1>Build Executor Status</h1>    
+                        </div>
+                    </div>
+                </div>
+                <JTable columns={columns} className="executor-info-table">
+                    <TableHeaderRow />
+                    {executorInfoService.computers && executorInfoService.computers.map(computer => [
+                        <TableRow>
+                            <TableCell>
+                                <Icon size={24} icon="HardwareComputer" color="rgba(53, 64, 82, 0.5)" />
+                            </TableCell>
+                            <TableCell>
+                                {computer.displayName}
+                            </TableCell>
+                        </TableRow>].concat(computer.executors.map(executor =>
+                        <TableRow>
+                            <TableCell>
+                            {!executor.idle && <StatusIndicator result="running" percentage={1000} />}
+                            </TableCell>
+                            <TableCell className="executor-info-cell">
+                                <Icon size={18} icon="NavigationSubdirectoryArrowRight" color="rgba(53, 64, 82, 0.5)" />
+                                {executor.displayName}
+                            </TableCell>
+                        </TableRow>))
+                    )}
+                </JTable>
+            </div>
         );
     }
 };

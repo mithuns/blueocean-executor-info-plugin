@@ -4,7 +4,7 @@ extensions:
     component: Routes
 
   - extensionPoint: jenkins.blueocean.top.links
-    component: TopLink
+    component: TopLinkMS
     
   - extensionPoint: jenkins.pipeline.branches.list.action
     component: ItemExecutorInfo

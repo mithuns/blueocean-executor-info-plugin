@@ -6,4 +6,10 @@ target
 work
 .idea
 *.iml
+.classpath
+.factorypath
+.project
+.settings/
+.vscode/
+package-lock.json
 
