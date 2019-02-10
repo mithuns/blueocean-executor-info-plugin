@@ -5,7 +5,8 @@ import { JTable, TableHeaderRow, TableRow, TableCell, StatusIndicator, Icon } fr
 
 const columns = [
     JTable.column(10, '', false),
-    JTable.column(60, 'Computers', true),
+    JTable.column(60, 'Computers', true)
+    //,JTable.column(60, 'Computers-MS', true),
 ];
 
 @observer

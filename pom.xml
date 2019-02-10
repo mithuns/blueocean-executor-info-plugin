@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>3.19</version>
+        <version>3.37</version>
     </parent>
     <name>Blue Ocean Executor Info</name>
     <artifactId>blueocean-executor-info</artifactId>
@@ -14,10 +14,10 @@
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Amazing+Plugin</url>
     <properties>
         <java.level>8</java.level>
-        <jenkins.version>2.121.1</jenkins.version>
-        <node.version>6.2.1</node.version>
-        <npm.version>3.10.10</npm.version>
-        <blueocean.version>1.8.2</blueocean.version>
+        <jenkins.version>2.163</jenkins.version>
+        <node.version>10.15.0</node.version>
+        <npm.version>6.7.0</npm.version>
+        <blueocean.version>1.10.2</blueocean.version>
     </properties>
     
     <licenses>
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>script-security</artifactId>
-            <version>1.44</version>
+            <version>1.46</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
@@ -62,7 +62,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
+            <version>3.7</version>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
@@ -96,7 +96,7 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>structs</artifactId>
-            <version>1.14</version>
+            <version>1.17</version>
         </dependency>
     </dependencies>
 

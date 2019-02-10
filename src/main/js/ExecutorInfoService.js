@@ -24,7 +24,7 @@ export class ExecutorInfoService {
 
     fetchExecutorInfo() {
         Fetch.fetchJSON(`${UrlConfig.getRestBaseURL()}/organizations/${AppConfig.getOrganizationName()}/computers/`)
-        .then(response => {
+        .then(response => {            
             this.setComputers(response.computers);
         });
     }
